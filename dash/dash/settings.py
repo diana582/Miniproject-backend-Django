@@ -86,14 +86,10 @@ WSGI_APPLICATION = 'dash.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dash',
-        'USER':'root',
-        'PASSWORD':'Diana@2002',
-        'HOST':'localhost', 
-        'PORT':3306,   }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
-
 #AUTH_USER_MODEL = 'user.AdminReg'
 
 
